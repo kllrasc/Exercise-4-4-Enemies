@@ -7,6 +7,7 @@ func _ready():
 	await enemy.ready
 
 func start():
+	enemy.set_animation("Attack")
 	enemy.velocity = Vector2.ZERO
 	$Timer.start()
 
